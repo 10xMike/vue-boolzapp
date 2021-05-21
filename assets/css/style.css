@@ -3,17 +3,17 @@
   margin: 0;
   padding: 0;
 }
-body{
-    background-color: #d7dbd6;
+body {
+  background-color: #d7dbd6;
 }
-.row{
-    height: 100px;
-    background-color: #009688;
+.row {
+  height: 100px;
+  background-color: #009688;
 }
-#app{
-    height: 100vh;
+#app {
+  height: 100vh;
 }
-.left_profile img{
-    width: 100px;
-    border-radius: 50%;
+.left_profile img {
+  width: 100px;
+  border-radius: 50%;
 }

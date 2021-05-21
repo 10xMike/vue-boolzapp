@@ -20,37 +20,49 @@
 <body>
     <div id="app">
         <div class="row">
-            
+
         </div>
-            <div class="container">
-                <div class="nav flex-column">
+        <div class="container">
+            <div class="nav flex-column">
 
-                    <div class="user_profile">
-                        <div class="left_profile">
-                            <img src="./assets/img/avatar_io.jpg" alt="immagine profilo utente">
-                            <i class="fa fa-circle-notch" aria-hidden="true"></i>
-                            <i class="far fa-comment-alt"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                        </div>
-                        <div class="right_profile">
-
-                        </div>
+                <div class="user_profile">
+                    <!-- sezione alla sinistra -->
+                    <div class="left_profile">
+                        <img src="./assets/img/avatar_io.jpg" alt="immagine profilo utente">
+                        <i class="fa fa-circle-notch" aria-hidden="true"></i>
+                        <i class="far fa-comment-alt"></i>
+                        <i class="fa fa-ellipsis-v"></i>
                     </div>
-                    <div class="notifications">
-                        <i class="far fa-bell-slash"></i>
-                        <span>Ricevi notifiche di nuovi messaggi</span>
-                        <div>
-                            <small><a href="#">Attiva notifiche desktop</a></small>
-                        </div>
+                    <div class="right_profile">
+                        <!-- sezione alla destra -->
                     </div>
-                    
-                    
-                    
-                    
-
                 </div>
+                <div class="notifications">
+                    <i class="far fa-bell-slash"></i>
+                    <span>Ricevi notifiche di nuovi messaggi</span>
+                    <div>
+                        <small><a href="#">Attiva notifiche desktop</a></small>
+                    </div>
+                </div>
+                <!-- barra di ricerca -->
+                <div class="search">
+                    <div class="searchbox">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    </div>
+                </div>
+                <!-- ciclo for in di lista utenti -->
+                <div class="user_list">
+                    <div class="users" v-for="(contact, index) in contacts">
+                        <img :src="" alt="">
+                        <span>{{contact.name}}</span>
+                    </div>
+                </div>
+
+
             </div>
-        
+        </div>
+
         <main>
 
         </main>
