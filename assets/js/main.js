@@ -89,6 +89,7 @@ const app = new Vue({
                 ],
             },
         ],
+        /* userImage: ('./assets/img/avatar_io.jpg'), */
     },
     methods:{
         // eventuali metodi
