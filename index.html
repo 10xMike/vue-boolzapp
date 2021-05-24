@@ -19,24 +19,21 @@
 
 <body>
     <div id="app">
-        <div class="row">
+        <header id="green">
 
-        </div>
-        <div class="container">
-            <div class="nav flex-column">
+        </header>
+        <main id="square">
+            <div id="userbar" class="">
 
-                <div class="user_profile">
-                    <!-- sezione alla sinistra -->
-                    <div class="left_profile">
-                        <img src="./assets/img/avatar_io.jpg" alt="immagine profilo utente">
-                        <i class="fa fa-circle-notch" aria-hidden="true"></i>
-                        <i class="far fa-comment-alt"></i>
-                        <i class="fa fa-ellipsis-v"></i>
-                    </div>
-                    <div class="right_profile">
-                        <!-- sezione alla destra -->
-                    </div>
+            </div>
+            <div id="sidebar">
+                <div class="left_profile">
+                    <img src="./assets/img/avatar_io.jpg" alt="immagine profilo utente">
+                    <i class="fa fa-circle-notch" aria-hidden="true"></i>
+                    <i class="far fa-comment-alt"></i>
+                    <i class="fa fa-ellipsis-v"></i>
                 </div>
+                <br>
                 <div class="notifications">
                     <i class="far fa-bell-slash"></i>
                     <span>Ricevi notifiche di nuovi messaggi</span>
@@ -51,23 +48,20 @@
                         <input type="text" placeholder="Cerca o inizia una nuova chat">
                     </div>
                 </div>
+                <hr>
                 <!-- ciclo for in di lista utenti -->
                 <div class="user_list">
                     <div class="users" v-for="(contact, index) in contacts">
-                        <img :src="" alt="">
+                        <img :src="'./assets/img/avatar' + contact.avatar + '.jpg'" alt="">
                         <span>{{contact.name}}</span>
                     </div>
                 </div>
-
-
             </div>
-        </div>
-
-        <main>
-
         </main>
     </div>
-
+    </div>
+    <!-- Day JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
     <!-- VUE JS -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <!-- Vanilla JS -->

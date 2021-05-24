@@ -3,17 +3,83 @@
   margin: 0;
   padding: 0;
 }
+#app {
+  height: 100vh;
+  position: relative;
+}
+#green {
+  height: 100px;
+  width: auto;
+  background-color: #009688;
+}
+#square {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 92%;
+  width: 85%;
+  border: 1px solid lightslategray;
+}
+#sidebar {
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  border-right: 1px solid lightslategray;
+  width: 375px;
+}
+#userbar {
+  border-bottom: 1px solid lightslategray;
+  height: 100px;
+  background-color: #d5d5d5;
+}
 body {
   background-color: #d7dbd6;
 }
-.row {
-  height: 100px;
-  background-color: #009688;
-}
-#app {
-  height: 100vh;
-}
+
 .left_profile img {
   width: 100px;
   border-radius: 50%;
 }
+img,
+svg {
+  vertical-align: middle;
+  width: 150px;
+  border-radius: 50%;
+}
+.fa-circle-notch:before {
+  padding-left: 200px;
+  content: "\f1ce";
+}
+/* APPUNTI PER UX/UI */
+/* (struttura a griglia?) */
+/* .green{
+  height: 20px;
+  width: 100%;
+  background-color: green;
+}
+
+.sidebar{
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  border: 1px solid black;
+  height: 200px;
+  width: 100px;
+}
+
+.square{
+  margin: 0;
+  position: absolute;
+  top: 10%;
+  left: 35.4%;
+  border: 1px solid black;
+  height: 200px;
+  width: 500px;
+} 
+30%70
+
+*/
