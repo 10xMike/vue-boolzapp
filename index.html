@@ -19,20 +19,24 @@
 
 <body>
     <div id="app">
-        <header id="green">
-
-        </header>
-        <main id="square">
-            <div id="userbar" class="">
-
-            </div>
-            <div id="sidebar">
-                <div class="left_profile">
-                    <img src="./assets/img/avatar_io.jpg" alt="immagine profilo utente">
-                    <i class="fa fa-circle-notch" aria-hidden="true"></i>
-                    <i class="far fa-comment-alt"></i>
-                    <i class="fa fa-ellipsis-v"></i>
+        <div id="green"></div>
+        <div class="square">
+            <div class="container">
+            <div class="row">
+                <div class="col-sm-4 userbar">
+                    <div class="left_profile">
+                        <img src="./assets/img/avatar_io.jpg" alt="immagine profilo utente">
+                        <i class="fa fa-circle-notch" aria-hidden="true"></i>
+                        <i class="far fa-comment-alt"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                    </div>
                 </div>
+                <div class="col-sm-8 userbar">
+                    Lorem ipsum dolor sit.
+                </div>
+            </div>
+            <div class="row">
+               <div class="col-sm-4 usercontent">
                 <br>
                 <div class="notifications">
                     <i class="far fa-bell-slash"></i>
@@ -56,9 +60,12 @@
                         <span>{{contact.name}}</span>
                     </div>
                 </div>
+               </div>
+               <div class="col-sm-8 usercontent"></div>
             </div>
-        </main>
-    </div>
+        </div>
+        </div>
+        
     </div>
     <!-- Day JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"></script>
